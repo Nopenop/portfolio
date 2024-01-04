@@ -11,6 +11,9 @@
     --color3: #ce9666;
     --color4: #b4996e;
     --color5: #faf9f2;
+    --color6: #ffd9d2;
+    --color7: #dfa9a2;
+    --color8: #ffa9a2;
 }
 
 body {
@@ -74,18 +77,22 @@ nav a{
 
 #projects {
     padding: 30px;
-    background-color: var(--color4);
+    background-color: var(--color6);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: larger;
+    text-align: center;
 }
 
 #projects .box {
+    font-size: medium;
     width: 200px;
     height: 200px;
     margin: 20px auto;
-    background-color: var(--color3);
+    background-color: var(--color8);
     border-radius: 5%;
+    box-shadow: 5px 5px var(--color7);
 }
 
 #projects .box img {
