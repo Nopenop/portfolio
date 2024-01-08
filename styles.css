@@ -101,13 +101,35 @@ nav a{
 }
 
 #contact {
-    height: 100px;
+    height: fit-content;
     background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
 
 #contact #links {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+#contact #links a {
+    background-color: var(--color2);
+    width: fit-content;
+    padding: 20px 10px ;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color4);
+    text-decoration: none;
+}
+
+#contact #links a:hover {
+    background-color: var(--color4);
+}
+
+#contact h1 {
+    text-align: center;
+    color:var(--color4)
 }
