@@ -146,8 +146,8 @@ nav a:hover {
     nav {
         position: fixed;
         z-index: 3;
-        top: 160px;
-        right: 10px;
+        top: 140px;
+        right: 50px;
         background-color: var(--color1);
         display: flex;
         flex-direction: column;
@@ -172,30 +172,31 @@ nav a:hover {
         margin: auto;
         background-color: var(--color2);
     }
-    #welcome #title-card {
-        right: 150px;
-        top: 5%;
-    
-    }
 
+    #welcome {
+        display: flex;
+        justify-content: start;
+        padding: 0 100px 0 5px;
+
+    }
     #welcome .box {
-        position: absolute;
         border-radius: 5%;
         background-color: var(--color3);
         box-shadow: 5px 10px var(--color4);
-    
-    }
+    } 
 
     #welcome .box #head_shot {
         height: 200px;
     }
-    
+    #welcome #title-card {
+        top: 0;
+    }
+
     #welcome #description {
-        top: 5%; 
-        width: 150px;
-        margin: auto;   
+        width: 130px;
+        height: 300px; 
         box-shadow: 5px 5px var(--color4);
-        right: 75px;
+        top: 0;
     }
 
 
