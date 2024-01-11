@@ -147,7 +147,7 @@ nav a:hover {
         position: fixed;
         z-index: 3;
         top: 140px;
-        right: 50px;
+        right: 0px;
         background-color: var(--color1);
         display: flex;
         flex-direction: column;
@@ -169,14 +169,13 @@ nav a:hover {
     
     #portfolio {
         width: 575px;
-        margin: auto;
+        margin: 0 100px 0 0;
         background-color: var(--color2);
     }
 
     #welcome {
         display: flex;
         justify-content: start;
-        padding: 0 100px 0 5px;
 
     }
     #welcome .box {
@@ -193,11 +192,39 @@ nav a:hover {
     }
 
     #welcome #description {
-        width: 130px;
+        width: 175px;
         height: 300px; 
         box-shadow: 5px 5px var(--color4);
         top: 0;
     }
 
+    #projects {
+        
+        background-color: var(--color6);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: larger;
+        text-align: center;
+    }
 
+    #projects .box {
+        font-size: medium;
+        background-color: var(--color8);
+        height: 200px;
+        width: 150px;
+        border-radius: 5%;
+        box-shadow: 5px 5px var(--color7);
+    }
+
+    #contact {
+        padding: 0 100px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    #portfolio {
+        margin: auto;
+    }
 }
