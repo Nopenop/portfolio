@@ -185,10 +185,12 @@ nav a:hover {
     } 
 
     #welcome .box #head_shot {
-        height: 200px;
+        height: 190px;
     }
     #welcome #title-card {
         top: 0;
+        height: 300px;
+        box-shadow: 5px 5px var(--color4);
     }
 
     #welcome #description {
@@ -227,4 +229,43 @@ nav a:hover {
     #portfolio {
         margin: auto;
     }
+}
+
+@media only screen and (min-width: 760px) and (min-height: 968px) {
+    #portfolio {
+        width: 720px;
+        margin: auto;
+    }
+    #welcome {
+        height: 700px;
+    }
+    #welcome .box {
+        border-radius: 5%;
+        background-color: var(--color3);
+        box-shadow: 5px 10px var(--color4);
+    } 
+    #welcome .box h1 {
+        font-size: 48px;
+        padding: 4px;
+    }
+
+    #welcome .box #head_shot {
+        height: 300px;
+    }
+    #welcome #title-card {
+        top: 0;
+        height: 350px;
+        width: 650px;
+        box-shadow: 5px 5px var(--color4);
+    }
+
+    #welcome #description {
+        width: 650px;
+        height: 100px; 
+        box-shadow: 5px 5px var(--color4);
+        top: 0;
+        right: 75px;
+    }
+
+
 }
