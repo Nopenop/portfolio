@@ -232,6 +232,32 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 760px) and (min-height: 968px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+        background-color: var(--color1);
+        padding: 5px;
+        width: 720px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        top: 0;
+        right: calc((100vw - 720px)/2)
+    }
+    
+    nav a{
+        padding: 15px 15px;
+        background-color: var(--color2);
+        border-radius: 5px;
+        text-decoration: none;
+        color: var(--color4);
+    }
+    
+    nav a:hover {
+        background-color: var(--color6);;
+    }
     #portfolio {
         width: 720px;
         margin: auto;
@@ -266,6 +292,5 @@ nav a:hover {
         top: 0;
         right: 75px;
     }
-
-
+    
 }
