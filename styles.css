@@ -244,7 +244,7 @@ nav a:hover {
         justify-content: space-around;
         align-items:center;
         top: 0;
-        right: calc((100vw - 720px)/2)
+        right: calc((100vw - 720px)/2);
     }
     
     nav a{
@@ -263,12 +263,13 @@ nav a:hover {
         margin: auto;
     }
     #welcome {
-        height: 700px;
+        height: 100vh;
     }
     #welcome .box {
         border-radius: 5%;
         background-color: var(--color3);
         box-shadow: 5px 10px var(--color4);
+        position: absolute;
     } 
     #welcome .box h1 {
         font-size: 48px;
@@ -281,16 +282,38 @@ nav a:hover {
     #welcome #title-card {
         top: 0;
         height: 350px;
-        width: 650px;
+        width: 80%;
         box-shadow: 5px 5px var(--color4);
+        top: 100px;
+        right: 10%;
     }
 
     #welcome #description {
-        width: 650px;
-        height: 100px; 
+        width: 80%;
+        height: 200px; 
         box-shadow: 5px 5px var(--color4);
-        top: 0;
-        right: 75px;
+        top: calc(450px + 5%);
+        right: 10%;
     }
-    
+
+    #projects {
+        
+        background-color: var(--color6);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: larger;
+        text-align: center;
+        height: 120vh;
+    }
+
+    #projects .box {
+        font-size: medium;
+        background-color: var(--color8);
+        height: 350px;
+        width: 350px;
+        border-radius: 5%;
+        box-shadow: 5px 5px var(--color7);
+    }
 }
