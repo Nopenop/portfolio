@@ -141,6 +141,17 @@ nav a:hover {
     color:var(--color2)
 }
 
+@media only screen and (min-width: 300px) {
+    #contact #links a {
+        background-color: var(--color2);
+        width: fit-content;
+        padding: 15px 5px ;
+        text-align: center;
+        border-radius: 5px;
+        color: var(--color4);
+        text-decoration: none;
+    }
+}
 
 @media only screen and (min-width: 600px) {
     nav {
@@ -222,8 +233,19 @@ nav a:hover {
     #contact {
         padding: 0 100px;
     }
+    #contact #links a {
+        background-color: var(--color2);
+        width: fit-content;
+        padding: 20px 10px ;
+        text-align: center;
+        border-radius: 5px;
+        color: var(--color4);
+        text-decoration: none;
+    }
 
 }
+
+
 
 @media only screen and (min-width: 800px) {
     #portfolio {
@@ -231,7 +253,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 760px) and (min-height: 968px) {
+@media only screen and (min-width: 800px){
     nav {
         position: fixed;
         z-index: 3;
@@ -315,5 +337,51 @@ nav a:hover {
         width: 350px;
         border-radius: 5%;
         box-shadow: 5px 5px var(--color7);
+    }
+    @media only screen and (min-width: 968px){
+        #portfolio{
+            width: 900px;
+        }
+        nav {
+            position: fixed;
+            z-index: 3;
+            background-color: var(--color1);
+            padding: 5px;
+            width: 900px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items:center;
+            top: 0;
+            right: calc((100vw - 900px)/2);
+        }
+        
+        nav a{
+            padding: 30px 15px;
+            background-color: var(--color2);
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--color4);
+        }
+        
+        nav a:hover {
+            background-color: var(--color6);;
+        }
+        #welcome #title-card {
+            top: 0;
+            height: 350px;
+            width: 800px;
+            box-shadow: 5px 5px var(--color4);
+            top: 100px;
+            right: calc((100vw - 800px)/2);
+        }
+    
+        #welcome #description {
+            width: 800px;
+            height: 200px; 
+            box-shadow: 5px 5px var(--color4);
+            top: calc(450px + 5%);
+            right: calc((100vw - 800px)/2);
+        }
     }
 }
